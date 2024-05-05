@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class='background fixed w-full h-screen z-[2]'>
+        <div class='relative w-full h-screen bg-zinc-800'>
+            <div class=' flex justify-center py-4 font-semibold text-zinc-500 text-xl pt-[50px]'>Documents.</div>
+            <!-- <h1 class='absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] text-[13vw] text-zinc-900 leading-none tracking-tight font-semibold'>Docs.</h1> -->
+        </div>
+    </div>
+    <div class="foreground fixed z-[3] w-full h-full flex flex-wrap p-5 gap-5 overflow-scroll justify-center">
+        <div class="absolute left-10 top-[53px] text-blue-600">
+            <a href="/">📃All Notes</a>
+        </div>
+        
+        <div class="h-[90%] flex items-center justify-center">
+            <form action="/create" method="post">
+                <input type="text" name="title" placeholder="Title" class="bg-zinc-900 px-5 py-2 text-white w-[336px] block mb-2 rounded-md" name="title">
+                <textarea class="bg-zinc-900 resize-none p-5 text-white block mb-3 rounded-md" id="" cols="35" rows="10" placeholder="Your note goes here." name="desc"></textarea>
+                <input type="submit" value="Add Note" class="btn block bg-blue-700 px-5 py-2 rounded-md text-white cursor-pointer">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
+
+    </div>
+</body>
+</html>
